@@ -1,5 +1,5 @@
 # ENUMERATION - SYSTEM, USERS, FILES, PROCESSES, SERVICES, TASKS, NETWORK INFO, RUNAS
-
+---
 ## System & User Information
 
 ### Get System Info
@@ -49,6 +49,7 @@
 |:-----:|:-----:|
 |```cat ~/.bash_history```|```doskey /history```(resets w/ new cmd.exe)|
 
+---
 ## Network Information
 
 ### List Network Adapter Settings
@@ -68,6 +69,7 @@
 | Linux | Windows |
 |:-----:|:-----:|
 |```netstat -anop```|```netstat -anop```|
+
 ---
 ## Linux - Interesting Files / Places to Look
 
