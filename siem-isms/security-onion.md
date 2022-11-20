@@ -23,3 +23,13 @@ Restart Service
 
 Restart Bro
 `nsm_sensor_ps-restart --only-bro`
+
+Bro Tagging
+bro `8200_post_tagging`
+
+`[source_ip]` & `[destination_ip]`
+
+works on all logs except 'files.log'
+`[ips]` field only works on 'files.log'
+
+`/etc/nsm/securityonion.conf` Contains days to keep indices 'open'
