@@ -71,6 +71,35 @@
 
 ## Linux - Interesting Files / Places to Look
 
-|List Current User's Various History Files|
-|:-----:|
-|```ls -la ~/.*_history```|
+##### List Current User's Various History Files
+```ls -la ~/.*_history```
+
+##### Can I Read root's History Files
+```ls -la /root/.*_history```
+
+##### Check For Interesting ssh Files In Current User's Directory
+```la -la ~/.ssh/```
+
+##### Find ssh Keys /host Information
+```find / -name "id_dsa*" -o -name "id_rsa" -o -name "known_hosts" -o -name "authorized hosts" -o -name "authorized_keys" 2>/dev/null | xargs -r ls -la```
+
+##### Find SUID root Files
+```find / -user root -perm -4000 -print 2>/dev/null```
+
+##### Find SGID root Files
+```find / -group root -perm -2000 -print 2>/dev/null```
+
+##### Find SUID/GUID Files Owned By Anyone
+```find / -perm -2000 -o -perm -4000 -print 2>/dev/null```
+
+##### List Open Files
+```lsof```
+
+##### Search For Files & Within Results
+```find / "[string]" | grep "[string]"```
+
+##### View Running Services
+```ps -elf```
+
+##### Lookup Running Process Binaries and Permissions
+```ps -aux | awk '{print $11}' | xargs -r ls -la 2>/dev/null | awk '!x[$0]++'```
