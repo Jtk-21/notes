@@ -1,7 +1,4 @@
-<div align="center">
-
-  
-# ENUMERATION - SYSTEM, USERS, FILES, PROCESSES, SERVICES, TASKS, NETWORK INFO, RUNAS
+<h1 align="center">ENUMERATION - SYSTEM, USERS, FILES, PROCESSES, SERVICES, TASKS, NETWORK INFO, RUNAS</h1>
 
 ## System & User Information
 
@@ -75,4 +72,3 @@
 ## Interesting Files / Places to Look
 
 ### 
-</div>
