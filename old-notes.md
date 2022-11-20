@@ -19,7 +19,7 @@
     <td>Windows</td>
   </tr>
   <tr>
-    <td>`uname -a && cat /proc/version`</td>
+    <td>```uname -a && cat /proc/version```</td>
     <td>systeminfo</td>
   </tr>
 </table>
