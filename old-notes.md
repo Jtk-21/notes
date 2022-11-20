@@ -133,3 +133,15 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
 
 ##### Run Command As Another User
 ```runas /savecred /user:[hostname]\[user] "CMD.EXE" /K [command to run]```
+
+##### Search For Files & Within Results
+```dir "[string]" /s | find "[string]"```
+
+##### View Running Processes
+```tasklist /SVC```
+
+##### Query Status of Services
+```sc queryex```
+
+##### Other Service Controls
+```sc```[option] start, stop, config, qc (config info)
