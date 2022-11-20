@@ -5,7 +5,11 @@
 ##### Get System Info
 | Linux | Windows |
 |:-----:|:-----:|
-|```uname -a && cat /proc/version```|```systeminfo```|
+|```
+uname -a && cat /proc/version
+```|```
+systeminfo
+```|
 
 ##### Get Current User
 
@@ -151,3 +155,12 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
 
 ##### Display All Scheduled Tasks
 ```schtasks /query /fo LIST /v```
+
+# METASPLOIT, PROXYCHAINS, SOCKS4A, MSFVENOM, WINDOWS & UNIX PERSISTENCE
+
+## METASPLOIT
+
+##### Get System Info
+| Linux | Windows |
+|:-----:|:-----:|
+|```uname -a && cat /proc/version```|```systeminfo```|
