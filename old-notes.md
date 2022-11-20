@@ -145,3 +145,9 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
 
 ##### Other Service Controls
 ```sc```[option] start, stop, config, qc (config info)
+
+##### Schedule a task
+```schtasks /create```
+
+##### Display All Scheduled Tasks
+```schtasks /query /fo LIST /v```
