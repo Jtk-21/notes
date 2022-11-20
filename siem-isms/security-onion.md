@@ -20,3 +20,6 @@ Edit `/etc/nsm/sensor_/bpf.conf`
 ```
 Restart Service
 `nsm_sensor_ps-restart --only-pcap`
+
+Restart Bro
+`nsm_sensor_ps-restart --only-bro`
