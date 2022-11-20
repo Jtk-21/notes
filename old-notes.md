@@ -68,9 +68,7 @@
 | Linux | Windows |
 |:-----:|:-----:|
 |```netstat -anop```|```netstat -anop```|
-
 ---
-
 ## Linux - Interesting Files / Places to Look
 
 |List Current User's Various History Files|
