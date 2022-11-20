@@ -212,9 +212,9 @@ route add [IP] [destination netmask] [session #]
 use auxiliary/server/socks4a
 set lport [number] (this should match the port in /etc/proxychains/conf)
 run
-```
+
 **If you update a route in MSF, restart your proxy
-```
+
 proxychains [cmd] (run a command using proxy)
 ```
 
