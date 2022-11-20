@@ -122,7 +122,8 @@
 ```dir /s /b "C:\Program Files\*.exe"```
 
 ##### Lookup Common Startups
-```reg query
+```
+reg query
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
