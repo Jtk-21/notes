@@ -164,3 +164,15 @@ name:[string]
 info:[module_name]
 grep [string] search [options]
 ```
+
+##### Using A Module
+```
+use [module_name]
+show options (show options for module)
+show advanced (show more options - if available)
+set [option] [value] (set value for options)
+set target [number] (some mods have this option)
+run/exploit (fire module)
+```
+
+
