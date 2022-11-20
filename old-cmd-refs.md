@@ -12,3 +12,7 @@ disown -h %1
 
 ## Vim
 `:set list` see special characters
+
+
+## routes
+`route add [IP] [MASK] [Dest]`
