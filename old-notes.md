@@ -69,6 +69,8 @@
 |:-----:|:-----:|
 |```netstat -anop```|```netstat -anop```|
 
-## Interesting Files / Places to Look
+## Linux - Interesting Files / Places to Look
 
-### 
+|List Current User's Various History Files|
+|:-----:|
+|```ls -la ~/.*_history```|
