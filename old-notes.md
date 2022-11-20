@@ -130,3 +130,6 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
 ```
+
+##### Run Command As Another User
+```runas /savecred /user:[hostname]\[user] "CMD.EXE" /K [command to run]```
