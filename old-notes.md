@@ -27,3 +27,11 @@
 | Linux | Windows |
 |:-----:|:-----:|
 |```cat /etc/shadow```|fgdump.exe / meterpreter hashdump / kiwi|
+### Does Current User Have Special Priv
+| Linux | Windows |
+|:-----:|:-----:|
+|```sudo -l```|```whoami /priv```|
+### Get Current User's Command History
+| Linux | Windows |
+|:-----:|:-----:|
+|```cat ~/.bash_history```|```doskey /history```(resets w/ new cmd.exe)|
