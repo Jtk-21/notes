@@ -33,3 +33,9 @@ works on all logs except 'files.log'
 `[ips]` field only works on 'files.log'
 
 `/etc/nsm/securityonion.conf` Contains days to keep indices 'open'
+
+
+## Start all Sec Onion docker containers
+```
+docker start $(docker images; awk '{print $1}'; cut -d "/" -f3)
+```
