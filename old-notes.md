@@ -103,3 +103,29 @@
 
 ##### Lookup Running Process Binaries and Permissions
 ```ps -aux | awk '{print $11}' | xargs -r ls -la 2>/dev/null | awk '!x[$0]++'```
+
+##### Open Crontab for Editing
+```crontab -e```
+
+##### Display All Scheduled cron Jobs
+```ls -la /etc/cron*```
+
+## Windows - Interesting Files / Places to Look
+
+##### Get Owner of Directory
+```dir [location] /Q```
+
+##### Get Permission of Location/File
+```icacls [location]```
+
+##### Find Client-Side Programs
+```dir /s /b "C:\Program Files\*.exe"```
+
+##### Lookup Common Startups
+```reg query
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+```
