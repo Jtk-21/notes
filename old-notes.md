@@ -15,7 +15,11 @@
 
 <table>
   <tr>
-    <td>1</td>
-    <td>2</td>
+    <td>Linux</td>
+    <td>Windows</td>
+  </tr>
+  <tr>
+    <td>`uname -a && cat /proc/version`</td>
+    <td>systeminfo</td>
   </tr>
 </table>
