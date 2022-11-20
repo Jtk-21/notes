@@ -5,11 +5,7 @@
 ##### Get System Info
 | Linux | Windows |
 |:-----:|:-----:|
-|```
-uname -a && cat /proc/version
-```|```
-systeminfo
-```|
+|```uname -a && cat /proc/version```|```systeminfo```|
 
 ##### Get Current User
 
@@ -160,7 +156,11 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
 
 ## METASPLOIT
 
-##### Get System Info
-| Linux | Windows |
-|:-----:|:-----:|
-|```uname -a && cat /proc/version```|```systeminfo```|
+##### Search [options]
+```
+type:[auxiliary | exploit | post]
+platform:[linux | windows | etc]
+name:[string]
+info:[module_name]
+grep [string] search [options]
+```
