@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Jake's Notes](README.md)
+* [Old Cmd Refs](old-cmd-refs.md)
 * [Old Notes](old-notes.md)
 
 ## TryHackMe
