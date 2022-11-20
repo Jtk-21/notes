@@ -16,6 +16,7 @@
 
 ## SIEM-ISMs
 
+* [Kibana](siem-isms/kibana.md)
 * [Beats](siem-isms/beats.md)
 * [Logstash](siem-isms/logstash.md)
 * [Elastic](siem-isms/elastic.md)
