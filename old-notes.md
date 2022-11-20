@@ -184,6 +184,38 @@ set [option] [value] (set value for option specified]
 
 ##### Manage Sessions & Jobs
 ```
+ctrl + z (or) background (places active session in the background)
+sessions -l (view all active sessions)
+sessions [number] (enter specific session number)
+sessions -u [number] (attempt to upgrade specific session to full meterpreter session)
+jobs -l (list running jobs)
+jobs -k [number] (kill specified job)
+```
 
+##### Using multi/handler
+Used to listen for callbacks
+```
+Configure:
+lhost (callback host)
+lport (callback port)
+```
+
+##### Routes
+Used to 'pivot' through a compromised system
+```
+route print (show current routes)
+route add [IP] [destination netmask] [session #]
+```
+
+##### Proxychains & SOCKS Proxy
+```
+use auxiliary/server/socks4a
+set lport [number] (this should match the port in /etc/proxychains/conf)
+run
+```
+**If you update a route in MSF, restart your proxy
+```
+proxychains [cmd] (run a command using proxy)
+```
 
 
