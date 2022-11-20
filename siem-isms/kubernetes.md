@@ -19,8 +19,10 @@ kubectl delete <resource>
 --all-namespaces
 
 kubectl rollout pause deployment <name> (can same-same with "resume")
-
 ```
+`kubectl -n <namespace> delete pods --field-selector=status.phase = Failed` delete all pods in 'failed' state
+`kubectl scale deployment <name> --replicas=# -n <namespace>` scale deployment
+
 
 ##### kube logs
 ```
