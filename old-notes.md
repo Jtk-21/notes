@@ -1,6 +1,3 @@
-# Old Notes
-
-
 # ENUMERATION - SYSTEM, USERS, FILES, PROCESSES, SERVICES, TASKS, NETWORK INFO, RUNAS
 
 ## System & User Information
