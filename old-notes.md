@@ -6,6 +6,6 @@
 ### Get System Info
 
 | Linux | Windows |
-|: ----- :|: ----- :|
+|:-----:|:-----:|
 |```uname -a && cat /proc/version``` | ```systeminfo``` |
 
