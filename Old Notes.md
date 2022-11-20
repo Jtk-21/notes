@@ -175,4 +175,13 @@ set target [number] (some mods have this option)
 run/exploit (fire module)
 ```
 
+##### Using A Payload
+```
+(at module prompt): show payloads (shows compatible payloads for module)
+show options (show options for payload)
+set [option] [value] (set value for option specified]
+```
+
+##### Manage Sessions & Jobs
+```
 
