@@ -419,6 +419,7 @@ fg
 ```
 
 ## Notes to take during Ops
+```
 IP
 Hostname
 Exploit Used
@@ -433,5 +434,9 @@ Important Files
 
 Misc Info
 Additional Notes
+```
 
-#
+# SAMBA, WEB SERVER, STEG, FIREWALLS, NETCAT, GET/CRACK HASHES, SNMP, CREATE USER, SCANS, U&E
+
+##
+
