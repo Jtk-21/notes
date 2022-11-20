@@ -1,8 +1,8 @@
 # Old Notes
 
 
-## ENUMERATION - SYSTEM, USERS, FILES, PROCESSES, SERVICES, TASKS, NETWORK INFO, RUNAS
-
+# ENUMERATION - SYSTEM, USERS, FILES, PROCESSES, SERVICES, TASKS, NETWORK INFO, RUNAS
+## System & User Information
 ### Get System Info
 | Linux | Windows |
 |:-----:|:-----:|
@@ -35,3 +35,5 @@
 | Linux | Windows |
 |:-----:|:-----:|
 |```cat ~/.bash_history```|```doskey /history```(resets w/ new cmd.exe)|
+## Interesting Files / Places to Look
+###
