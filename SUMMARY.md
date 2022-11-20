@@ -28,3 +28,7 @@
 ## Purple Team
 
 * [Notes](purple-team/notes.md)
+
+## MISC
+
+* [AWS Snowball](misc/aws-snowball.md)
