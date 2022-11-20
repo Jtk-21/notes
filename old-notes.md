@@ -35,5 +35,18 @@
 | Linux | Windows |
 |:-----:|:-----:|
 |```cat ~/.bash_history```|```doskey /history```(resets w/ new cmd.exe)|
+## Network Information
+### List Network Adapter Settings
+| Linux | Windows |
+|:-----:|:-----:|
+|```ip addr show```|```ipconfig /all```|
+### Show IP Routes
+| Linux | Windows |
+|:-----:|:-----:|
+|```netstat -r```|```netstat -r```|
+### Show All Listening Ports & Connections
+| Linux | Windows |
+|:-----:|:-----:|
+|```netstat -anop```|```netstat -anop```|
 ## Interesting Files / Places to Look
-###
+### 
